@@ -1,5 +1,3 @@
-# Copyright (C) 2021 By VeezMusicProject
-
 import os
 from pyrogram import Client, filters
 from pyrogram.types import Message
@@ -9,7 +7,7 @@ from helpers.decorators import sudo_users_only, errors
 downloads = os.path.realpath("bot/downloads")
 raw = os.path.realpath(".")
 
-@Client.on_message(command(["rmd", "cleardl"]) & ~filters.edited)
+@Client.on_message(command(["rmdl"]) & ~filters.edited)
 @errors
 @sudo_users_only
 async def clear_downloads(_, message: Message):
@@ -21,7 +19,7 @@ async def clear_downloads(_, message: Message):
     else:
         await message.reply_text("❌ **no files downloaded**")
         
-@Client.on_message(command(["clean", "wipe", "rmw"]) & ~filters.edited)
+@Client.on_message(command(["wipe"]) & ~filters.edited)
 @errors
 @sudo_users_only
 async def clear_raw(_, message: Message):
@@ -34,7 +32,7 @@ async def clear_raw(_, message: Message):
     else:
         await message.reply_text("❌ **no raw files**")
 
-@Client.on_message(command(["dahlah"]) & ~filters.edited)
+@Client.on_message(command(["kaj"]) & ~filters.edited)
 # edit if u want
 async def haduhh(_, message: Message):
     pth = os.path.realpath(".")
@@ -42,6 +40,6 @@ async def haduhh(_, message: Message):
     if ls_dir:
         for dta in os.listdir(pth):
             os.system("rm -rf *.raw *.jpg")
-        await message.reply_text("Oke")
+        await message.reply_text("Ok")
     else:
         await message.reply_text("tadi udah")
