@@ -25,7 +25,7 @@ from helpers.filters import command
 from helpers.decorators import humanbytes
 
 
-@Client.on_message(command(["song", f"song@{Veez.BOT_USERNAME}"]) & ~filters.channel)
+@Client.on_message(command(["jvsong"]) & ~filters.channel)
 def song(_, message):
     query = " ".join(message.command[1:])
     m = message.reply("🔎 finding song...")
@@ -225,7 +225,7 @@ def time_to_seconds(times):
     return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(":"))))
 
 
-@Client.on_message(command(["vsong", f"vsong@{Veez.BOT_USERNAME}"]) & filters.group & ~filters.edited)
+@Client.on_message(command(["vsong"]) & filters.group & ~filters.edited)
 async def vsong(client, message):
     ydl_opts = {
         'format':'best',
