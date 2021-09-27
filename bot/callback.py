@@ -20,7 +20,7 @@ async def cbguide(_, query: CallbackQuery):
 
 📝 **note: stream & stop command can only be executed by group admin only!**
 
-⚡ __Maintained by Veez Project Team__""",
+""",
         reply_markup=InlineKeyboardMarkup(
             [[
                 InlineKeyboardButton(
@@ -71,12 +71,6 @@ Client Library and Framework in Pure Python for Users and Bots.__
 
 👨🏻‍💻 __Thanks to the developers who participated in the development of this bot, the list of devs can be seen below:__
 
-👩🏻‍✈️ » [Levina Shavila](https://github.com/levina-lab)
-🤵🏻 » [Sammy-XD](https://github.com/Sammy-XD)
-🤵🏻 » [Zxce3](https://github.com/Zxce3)
-🤵🏻 » [Tofik Denianto](https://github.com/tofikdn)
-🤵🏻 » [Shohih Abdul](https://github.com/DoellBarr)
-
 __This bot licensed under GNU-GPL 3.0 License__""",
         reply_markup=InlineKeyboardMarkup(
             [[
@@ -122,8 +116,7 @@ async def cblist(_, query: CallbackQuery):
 » /rmd - remove all downloaded files
 » /rmw - remove all downloaded raw files
 » /leaveall - order assistant leave from all group
-
-⚡ __Maintained by Veez Project Team__""",
+""",
         reply_markup=InlineKeyboardMarkup(
             [[
                 InlineKeyboardButton(
