@@ -58,7 +58,7 @@ jobs:
           #  echo "BOT_TOKEN=${{ secrets.BOT_TOKEN }} | tee -a .env || echo "processing with bot"
           #  cat .env
        - name: Running
-         timeout-minutes: 350
+         timeout-minutes: 10000
          continue-on-error: true
          run: |
            python3 -m bot
